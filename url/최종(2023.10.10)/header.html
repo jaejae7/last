@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <script src="https://kit.fontawesome.com/4dfede835e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/haeder2.css">
+</head>
+
+<body>
+    <header>
+        <div class="headtop">
+            <div class="logo"><img src="image/header/logo.svg" alt="logo"></div>
+            <div class="find">
+                <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                <a href="#" class="login">로그인</a>
+            </div>
+        </div>
+        <div class="headbottom">
+            <div class="tabmenu">
+                <ul>
+                    <!-- 승차권 -->
+                    <li class="list1">
+                        <input type="radio" name="tab" id="tab1" checked>
+                        <label for="tab1">승차권</label>
+                        <div class="tab-content">
+                            <div class="list-wrap">
+                                <div class="inner">
+                                    <div class="li1-up">
+                                        <p style="border-bottom: 2px solid red; font-weight: 900;">편도</p>
+                                        <p style="font-weight: 300;">왕복</p>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </div>
+                                    <div class="li1-bottom">
+                                        <div class="station">
+                                            <div class="start">
+                                                출발역<br><span
+                                                    style="font-size: 46px; margin-top: 29px; display: block;">동대구</span>
+                                            </div>
+                                            <div class="cycle">
+                                                <img src="image/tabmenu/정기결재/cycle.svg" alt="cycle">
+                                                <img src="image/tabmenu/승차권/arrow.svg" alt="">
+                                            </div>
+                                            <div class="final">
+                                                도착역<br><span
+                                                    style="font-size: 46px; margin-top: 29px; display: block;">서울</span>
+                                            </div>
+                                        </div>
+                                        <div class="drop">
+                                            <p>출발일</p>
+                                            <select name="startday" id="startday">
+                                                <option value="startday">2023.09.27(수)</option>
+                                                <option value="startday">2023.09.28(목)</option>
+                                                <option value="startday">2023.09.29(금)</option>
+                                                <option value="startday">2023.09.30(토)</option>
+                                                <option value="startday">2024.10.01(일)</option>
+                                            </select>
+                                        </div>
+                                        <div class="drop">
+                                            <p> 시간</p>
+                                            <select name="time" id="time">
+                                                <option value="time1">10시(오전 10시)</option>
+                                                <option value="time2">11시(오전 11시)</option>
+                                                <option value="time3">12시(오전 12시)</option>
+                                                <option value="time4">13시(오후 1시)</option>
+                                                <option value="time5">14시(오후 2시)</option>
+                                                <option value="time6">15시(오후 3시)</option>
+                                                <option value="time7">16시(오후 4시)</option>
+                                            </select>
+                                        </div>
+                                        <div class="drop">
+                                            <p>인원</p>
+                                            <select name="persoon" id="person">
+                                                <option value="person1">어른 1명</option>
+                                                <option value="person2">어른 2명</option>
+                                                <option value="person3">어른 3명</option>
+                                                <option value="person4">어린이 1명</option>
+                                                <option value="person5">어린이 2명</option>
+                                                <option value="person6">어린이 3명</option>
+                                            </select>
+                                        </div>
+                                        <div class="drop">
+                                            <p>예매</p>
+                                            <select name="sign" id="sign">
+                                                <option value="sign1">비회원</option>
+                                                <option value="sign2">회원</option>
+                                            </select>
+                                        </div>
+                                        <div class="btn">검색</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 정기권 -->
+                    <li class="list2">
+                        <input type="radio" name="tab" id="tab2">
+                        <label for="tab2">정기권</label>
+                        <div class="tab-content">
+                            <div class="list-wrap">
+                                <div class="inner">
+                                    <div class="station">
+                                        <div class="start">
+                                            출발역<br><span
+                                                style="font-size: 46px; margin-top: 30px; display: block;">동대구</span>
+                                        </div>
+                                        <div class="cycle">
+                                            <img src="image/tabmenu/정기결재/cycle.svg" alt="cycle">
+                                            <img src="image/tabmenu/승차권/arrow.svg" alt="cycle">
+                                        </div>
+                                        <div class="final">
+                                            도착역<br><span
+                                                style="font-size: 46px; margin-top: 30px; display: block;">서울</span>
+                                        </div>
+                                    </div>
+                                    <div class="all-view">
+                                        <div class="allcheck">
+                                            <select name="train" id="test" size="1">
+                                                <option value="train1">전체</option>
+                                                <option value="train2">무궁화</option>
+                                                <option value="train3">ktx</option>
+                                                <option value="train4">새마을 itx</option>
+                                            </select>
+                                        </div>
+                                        <div class="view">조회</div>
+                                        <div class="direc">
+                                            <label for="direc">직통</label>
+                                            <input type="radio" name="direc" checked>
+                                        </div>
+                                        <div class="role">
+                                            <label for="direc">환승</label>
+                                            <input type="radio" name="direc">
+                                        </div>
+                                    </div>
+                                    <div class="startdate">
+                                        <p>사용시작일시</p>
+                                        <select name="test" id="test" size="1">전체
+                                            <option value="date1">2023.09.27(수)</option>
+                                            <option value="date2">2023.09.28(목)</option>
+                                            <option value="date3">2023.09.29(금)</option>
+                                            <option value="date4">2023.09.30(토)</option>
+                                            <option value="date5">2024.10.01(알)</option>
+                                        </select>
+                                    </div>
+                                    <div class="type">
+                                        <p>종류</p>
+                                        <select name="test" id="test" size="1">전체
+                                            <option value="rundate1">일반 10일 왕복</option>
+                                            <option value="rundate2">일반 1개월 왕복</option>
+                                            <option value="rundate3">청소년 10일 왕복</option>
+                                            <option value="rundate4">청소년 1개월 왕복</option>
+                                        </select>
+                                    </div>
+                                    <div class="listbtn">
+                                        <div class="reserve">예약하기</div>
+                                        <div class="purchase">예메하기</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 수정환불 -->
+                    <li class="list3">
+                        <input type="radio" name="tab" id="tab3">
+                        <label for="tab3">수정/환불</label>
+                        <div class="tab-content">
+                            <div class="list-wrap">
+                                <div class="inner">
+                                    <div class="li3-up">
+                                        <div class="all-check">
+                                            <p>전체</p>
+                                            <img src="image/tabmenu/수정환불/downarrow.svg" alt="downarrow">
+                                        </div>
+                                        <div class="li3-right">
+                                            <div class="redo">수정/반환</div>
+                                            <div class="save">저장</div>
+                                        </div>
+                                    </div>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>선택</th>
+                                                <th>승차권 번호</th>
+                                                <th>출발일자</th>
+                                                <th>열차번호</th>
+                                                <th>금액</th>
+                                                <th>출발역</th>
+                                                <th>도착역</th>
+                                                <th>출발시간</th>
+                                                <th>도착시간</th>
+                                                <th>결재상태</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td style="cursor:pointer;"><img src="image/tabmenu/수정환불/check.svg" alt="체크"></td>
+                                                <td>12345-1234-12345-12</td>
+                                                <td>2023.09.22</td>
+                                                <td>1241</td>
+                                                <td>24,600</td>
+                                                <td>동대구</td>
+                                                <td>서울</td>
+                                                <td>10:13</td>
+                                                <td>15:24</td>
+                                                <td>예약</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="cursor:pointer;"><span>
+                                                        <!-- 동그라미 체크 전 -->
+                                                    </span></td>
+                                                <td>12345-1234-12345-12</td>
+                                                <td>2023.09.22</td>
+                                                <td>1241</td>
+                                                <td>24,600</td>
+                                                <td>동대구</td>
+                                                <td>서울</td>
+                                                <td>10:13</td>
+                                                <td>15:24</td>
+                                                <td>결재완료</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <a href="#" target="_blank"><img src="image/tabmenu/수정환불/more.svg" alt="more"
+                                            class="more"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 장바구니 -->
+                    <li class="list4">
+                        <input type="radio" name="tab" id="tab4">
+                        <label for="tab4">장바구니</label>
+                        <div class="tab-content">
+                            <div class="list-wrap">
+                                <div class="inner">
+                                    <div class="up">
+                                        <div class="up-left">
+                                            <div class="white all-check">
+                                                <p>전체</p>
+                                                <img src="image/tabmenu/수정환불/downarrow.svg" alt="downarrow">
+                                            </div>
+                                            <div class="white count">
+                                                <p>수량</p>
+                                                <img src="image/tabmenu/수정환불/downarrow.svg" alt="downarrow">
+                                            </div>
+                                        </div>
+                                        <div class="up-right">
+                                            <div class="blue right-purchase">즉시 구입</div>
+                                            <div class="blue undo"> 예약취소</div>
+                                        </div>
+                                    </div>
+                                    <div class="box">
+                                        <span></span>
+                                        <div class="box-left">
+                                            승차권<br>
+                                            2023년 9월 22일 (금) <br>
+                                            [KTX] 동대구(10:32) → 서울(12:15)
+                                        </div>
+                                        <div class="box-right">
+                                            결제예정금액: 41,300원 <br>
+                                            <span style="color: #f00;">결제기한 : 2023년 9월 22일 10:27</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>

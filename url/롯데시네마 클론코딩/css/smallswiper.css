@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.swiper .wrap {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.swiper-slide .item {
+    color: #FFF;
+    text-align: center;
+}
+.swiper-slide .item .top_info .poster_info {
+    display: block;
+    height: 262px;
+}

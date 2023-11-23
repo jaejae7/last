@@ -1,0 +1,708 @@
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "r";
+}
+
+@font-face {
+  font-family: "r";
+  src: url("../fonts/Radicals\ DEMO.ttf");
+}
+
+.wrap {
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.image-container .bcc {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.birdl {
+  position: absolute;
+  top: -54px;
+  left: -50px;
+  width: 450px;
+  height: 450px;
+  object-fit: contain;
+}
+
+.birdr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+}
+
+.birdc {
+  position: absolute;
+  top: 0;
+  right: 30%;
+  width: 300px;
+  height: 250px;
+  object-fit: contain;
+}
+
+.bats {
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 200px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.mainimg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  z-index: 9;
+}
+
+.mainimg .snowwhite {
+  width: 400px;
+  height: 500px;
+  object-fit: contain;
+}
+
+.mainimg .snowwhite:hover {
+  cursor: pointer;
+  
+}
+
+.mainimg .maintxt svg:hover {
+  cursor: pointer;
+  fill: red;
+}
+
+.maintxt img {
+  width: 150px;
+  height: 150px;
+}
+
+.user {
+  font-family: "r";
+  font-size: 2.5rem;
+  color: black;
+}
+
+.xt {
+  font-size: 1rem;
+  color: #919191;
+} 
+
+.ist {
+  font-size: 1.5rem;
+}
+
+.user svg {
+  margin-right: 15px;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+/*                 두번째 서브 페이지?                    */
+
+.sub {
+  width: 100%;
+  height: 100vh;
+  /* margin: 0 auto; */
+}
+
+.sub .text {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  margin: 0 auto;
+}
+
+.sub .text .content-text {
+  list-style: none;
+  display: flex;
+}
+
+.sub .text .content-text li {
+  text-align: center;
+  margin-right: 50px;
+  text-decoration-line: underline;
+}
+
+/*                 main-container                 */
+
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+/*                     마녀이미지               */
+.container img {
+  position: absolute;
+  top: 92%;
+  right: 0%;
+  object-fit: contain;
+  z-index: 9;
+  /* width: 500px;
+ height: 1000px; */
+}
+
+.main-container .container {
+  width: 1400px;
+  margin: 100px auto;
+}
+
+li {
+  list-style: none;
+}
+
+.tabmenu {
+  width: 1000px;
+  margin: 10px auto;
+  position: relative;
+  z-index: 9;
+  margin: 0 22%;
+}
+
+.tabmenu ul li {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+
+
+.tabmenu ul li input {
+  display: none;
+}
+
+.tabmenu ul li label {
+  width: 100%;
+  display: block;
+  line-height: 40px;
+  font-size: 2rem;
+}
+
+.tabmenu ul li .tab-content {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  /* text-align: right; */
+  padding: 20px;
+  display: none;
+}
+
+.tabmenu ul li .tab-content a,
+p {
+  text-decoration-line: none;
+  color: black;
+}
+
+.tab-content {
+  margin: 10% 1% -5%;
+}
+
+.tab-content .ist {
+  margin-top: 30px;
+}
+
+/* .tabmenu input:checked~label {
+    color: red;
+    cursor: pointer;
+    text-decoration-line: underline;
+} */
+/* .tabmenu input:hover~label {
+    color: red;
+    cursor: pointer;
+    text-decoration-line: underline;
+}  */
+/* .tabmenu input:checked~.tab-content {
+    display: block;
+} */
+/* .tabmenu input:hover ~.tab-content {
+    display: block;
+} */
+
+.tab-content img {
+  width: 450px;
+  height: 250px;
+  float: left;
+}
+
+.tab-content .cook {
+  width: 1080px;
+  height: 1080px;
+}
+
+
+.tabmenu .txt {
+  font-size: 3rem
+}
+
+
+.tabmenu .txt:hover {
+  cursor: pointer;
+  text-decoration-line: underline;
+  color: #ff0000;
+}
+
+
+/*                  sns 디자인 content                */
+
+
+.etc-w {
+  margin-top: 52%;
+}
+
+.tt {
+  width: 1000px;
+  margin: 10px auto;
+  position: relative;
+  z-index: 9;
+  margin: 0 22%;
+}
+
+.tt ul li {
+  width: 18%;
+  float: left;
+  margin-top: 5%;
+  /* text-align: center; */
+}
+
+/* .tt ul li input {
+  display: none;
+} */
+
+/* .tt ul li label {
+  width: 100%;
+  display: block;
+  line-height: 40px;
+  font-size: 2rem;
+} */
+
+/* .tt ul li .jpg-content { */
+/* position: absolute; */
+/* top: 50px;
+  left: 0;
+  width: 100%; */
+/* text-align: right; */
+/* padding: 20px; */
+/* display: none; */
+/* } */
+
+.tt > .sns {
+  text-decoration-line: none;
+  color: black;
+  margin-top: 1%;
+  font-size: 1.5rem;
+}
+
+.tt h1 {
+  cursor: pointer;
+}
+
+
+.contact h1 {
+  cursor: pointer;
+}
+
+
+.flash {
+  animation: infinite;
+}
+
+.etc-w .work .tt {
+  width: 100%;
+  height: 100%;
+  margin-left: 10%;
+}
+
+.etc-w .work .tt img {
+  transition: all .5s;
+  display: none;
+  width: 250px;
+  /* height: 250px; */
+  object-fit: cover;
+}
+
+.etc-w .work .tt img.active {
+  display: block;
+  animation: ttimg 1s linear;
+}
+
+@keyframes ttimg {
+  0% {
+    transform: scale(.3);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.fg   {
+  margin-top: 40%;
+}
+.fg .fg-txt {
+  font-size: 2rem;
+}
+
+.fg-txt p {
+  margin-left: 13%;
+  font-size: 1rem;
+  color: #919191;
+}
+
+.fg-txt h1 {
+  font-size: 2rem;
+  width: 100%;
+    height: 100%;
+    margin-left: 10%;
+}
+
+.fg .fginner {
+  text-align: center;
+  display: flex;
+  margin-left: 22%;
+  margin-top: 5%;
+}
+
+
+.fg .fginner ul {
+  display: flex;
+  gap: 27%;
+  opacity: 0;
+  
+}
+
+.fg .fginner ul:hover {
+  opacity: 1;
+}
+
+.fginner ul li .snow {
+  width: 200px;
+  height: 100px;
+ object-fit: contain;
+ transition: all .5s;
+ 
+
+}
+
+
+.fginner ul li .hot {
+  width: 200px;
+  height: 100px;
+ object-fit: contain;
+ transition: all .5s;
+}
+
+.fginner ul li .nb {
+  width: 100px;
+  height: 100px;
+ object-fit: contain;
+ transition: all .5s;
+
+
+}
+
+.fginner ul li svg {
+  width: 90px;
+  height: 100px; 
+  object-fit: contain;
+  transition: all .5s;
+  /* :hover 하기전에 transition 적용 */
+}
+
+
+.fginner ul li svg:hover {
+  transform: scale(3); /* 이미지 컨테이너를 1.2배로 확대 */
+  cursor: pointer; /* 마우스 커서를 포인터로 변경 (선택 사항) */
+
+}
+
+.fginner ul li img:hover {
+transform: scale(2.5); /* 이미지 컨테이너를 1.2배로 확대 */
+  cursor: pointer; /* 마우스 커서를 포인터로 변경 (선택 사항) */
+}
+/*                          what i do                                 */
+
+.function {
+  padding: 30% 0 20%;
+  width: 1400px;
+  margin: 0 auto;
+}
+
+
+.function h1 {
+  height: 100px;
+}
+
+.function .seven ul {
+  display: flex;
+}
+
+.function .seven ul li {
+  margin-right: 37px;
+}
+
+
+.function h3:hover {
+  /* color: #bbbbbb; */
+  color: #ff0000;
+}
+
+
+.function .seven h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.seven img {
+  width: 150px;
+  height: 250px;
+  filter: brightness(70%);
+  margin-top: 30px;
+}
+
+.seven img:hover {
+  cursor: pointer;
+  filter: brightness(-10%);
+}
+
+/*                       contact me                   */
+
+.contact .title {
+  margin-bottom: -36px;
+}
+
+.contact .title h1 {
+  font-size: 3rem;
+  margin-left: 116px;
+  margin: -4% 5% 5% 8%;
+}
+
+.contact-me p {
+  font-size: 1.4rem;
+}
+
+
+/* .title .xt {
+  margin-left: 9%;
+  margin-top: -5%;
+} */
+
+.right label {
+  font-size: 2rem;
+}
+
+.contact-me span {
+  font-size: 1.6rem;
+}
+
+section .contact-me::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+section .contact-me .left {
+  width: 30%;
+  float: left;
+  margin-top: 13%;
+  margin-left: 8.2%;
+  /* opacity: 0.08; */
+}
+
+/* section .contact-me .left.left:hover {
+    cursor: pointer;
+    opacity: 1;
+} */
+
+section .contact-me .left .card {
+  /* border: 1px solid #ff0000; */
+  /* background-color: rgb(255, 255, 255); */
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+section .contact-me .left .card .icon {
+  display: none;
+}
+
+section .contact-me .left:hover .card .icon {
+  display: block;
+}
+
+section .contact-me .left:hover p {
+  animation: typing 3s steps(40);
+}
+
+section .contact-me .left p {
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+section .contact-me .left:hover span {
+  animation: typing 3s steps(40);
+}
+
+
+/* p태그랑 span 태그 after 요소로 | 만들어서 호버하면 얘가 깜빡거릴 수 있도록 animation[opacity: 0~ 1] 효과  */
+section .contact-me .left span {
+  display: block;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+section .contact-me .left .card .icon i {
+  font-size: 2rem;
+  margin-right: 14px;
+}
+
+section .contact-me .right {
+  width: 50%;
+  float: right;
+  margin-top: -71%;
+}
+
+section .contact-me .right .form-group {
+  margin-bottom: 1.25rem;
+}
+
+section .contact-me .right .form-group label {
+  display: block;
+  margin-bottom: 0.85rem;
+}
+
+section .contact-me .right .form-group input {
+  width: 100%;
+  border: 1px solid #ff0000;
+  background-color: black;
+  outline: none;
+  border-radius: 10px;
+  padding: 0.6rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+section .contact-me .right .form-group input:hover {
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+section .contact-me .right .form-group input:focus {
+  border: 2px solid #ff0000;
+  /* background-color: #4859ed; */
+  box-shadow: 0 0 7px #ff0000;
+  resize: none;
+}
+
+section .contact-me .right .form-group textarea {
+  width: 100%;
+  height: 300px;
+  resize: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  border: 1px solid #ff0000;
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+}
+
+section .contact-me .right .form-group textarea:hover {
+  color: #000;
+  background-color: #ffff;
+  border: 1px solid #ff0000;
+}
+
+section .contact-me .right .form-group textarea:focus {
+  outline: none;
+  border: 2px solid #ff0000;
+  box-shadow: 0 0 7px #ff0000;
+}
+
+section .contact-me button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #000000;
+  border: none;
+  color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #ff0000;
+  font-size: 2rem;
+}
+
+section .contact-me button:hover {
+  color: #000000;
+  background-color: white;
+  border: 1px solid #ff0000;
+}
+
+/*             contact me img               */
+
+.contact .flash {
+  position: absolute;
+  margin-top: -3%;
+  width: 32%;
+  height: 100px;
+  object-fit: contain;
+  z-index: 9;
+  animation: flash 1s infinite;
+}
+
+.contact-me .bg {
+  background-image: url("../image/거울.png");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  margin-left: 0;
+  margin-top: 90px;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

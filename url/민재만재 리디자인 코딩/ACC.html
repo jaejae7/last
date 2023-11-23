@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>민재만재 acc사이트 리디자인?</title>
+        <link rel="stylesheet" href="css/ACC.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+        <style>
+            svg {
+                fill: #f875aa;
+            }
+
+            html,
+            body {
+                position: relative;
+            }
+
+            body {
+                background: #eee;
+                font-family: sans-serif;
+                font-size: 14px;
+                color: #000;
+                margin: 0;
+                padding: 0;
+            }
+
+            .swiper {
+                width: 100%;
+                height: 100%;
+            }
+
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                /* background: #fff; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                margin-right: 10px;
+            }
+
+            .swiper-slide img {
+                display: block;
+                object-fit: cover;
+            }
+
+            .swiper-pagination::after {
+                display: none;
+            }
+
+            :root {
+                --swiper-theme-color: none;
+                --swiper-theme-color: #f875aa;
+            }
+
+            .swiper-pagination-bullet::after {
+                display: none;
+            }
+
+            .swiper-pagination-bullet {
+                background: var(--swiper-pagination-bullet-inactive-color, #f875aa);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="logo">
+                <h1>MINJAEMANZE</h1>
+            </div>
+            <div class="gnb" style="display: flex">
+                <!-- <div class="mask"></div> -->
+                <ul class="menu">
+                    <li>셀럽&베스트</li>
+                    <li>협찬&후기</li>
+                    <li>문의/공지/NOTICE</li>
+                </ul>
+                <div class="icon">
+                    <ul class="right" style="display: flex">
+                        <li class="search">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                                />
+                            </svg>
+                        </li>
+                        <li class="login">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"
+                                />
+                            </svg>
+                        </li>
+
+                        <li class="basket">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
+                                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                                />
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide one"></div>
+                    <div class="swiper-slide two"></div>
+                    <div class="swiper-slide th"></div>
+                    <div class="swiper-slide fo"></div>
+                    <div class="swiper-slide five"></div>
+                    <div class="swiper-slide six"></div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="content-wrap">
+            <ul class="content">
+                <li class="Earring">Earring</li>
+                <li class="Earcuffs">Ear-cuffs</li>
+                <li class="Necklace">Necklace</li>
+                <li class="Etc">Etc</li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <ul class="content-list">
+                <li class="box-1">
+                    <img src="images/image_1667290898844_1000.png" alt="" />
+                    <div class="txt">
+                        <h2>♥진주 리본♥</h2>
+                        <br>
+                        <p style="color: #000;">[아이브 리즈님 착용,모델 발렌티나님 착용]</p>
+                        <br>
+                        <p style="color: #000;">22,000원</p>
+                    </div>
+                </li>
+                <li class="box-2">
+                    <img src="images/image_1677930661446_1000.jpg" alt="" />
+                    <div class="txt">
+                        <h2>♥베이비 비즈♥</h2>
+                        <br>
+                        <p style="color: #000;">[아기자기한 비즈로 사랑스러운 느낌을 연출]</p>
+                        <br>
+                        <p style="color: #000;">15,000원</p>
+                    </div>
+                </li>
+                <li class="box-3">
+                    <img src="images/image_1679040923982_1000.jpg" alt="" />
+                    <div class="txt">
+                        <h2>♥영롱한 푸른꽃잎♥</h2>
+                        <br>
+                        <p style="color: #000;">[여리여리한 여성스러움을 연출]</p>
+                        <br>
+                        <p style="color: #000;">18,000원</p>
+                    </div>
+                </li>
+                <li class="box-4">
+                    <img src="images/image_1652961910286_1000.png" alt="" />
+                    <div class="txt">
+                        <h2>♥실버 하트링♥</h2>
+                        <br>
+                        <p style="color: #000;">[큐티와 힙한 느낌을 연출]</p>
+                        <br>
+                        <p style="color: #000;">15,000원</p>
+                    </div>
+                </li>
+                <li class="box-5">
+                    <img src="images/image_1655316004404_1000.jpg" alt="" />
+                    <div class="txt">
+                        <h2>♥아기 곰돌이♥</h2>
+                        <br>
+                        <p style="color: #000;">[귀욤 귀욤이 한가득]</p>
+                        <br>
+                        <p style="color: #000;">9,000원</p>
+                    </div>
+                </li>
+                <li class="box-6">
+                    <img src="images/image_1612180356494_1000.jpg" alt="" />
+                    <div class="txt">
+                        <h2>♥자이언트 나비♥</h2>
+                        <br>
+                        <p style="color: #000;">[세련된 도시여자느낌을 연출]</p>
+                        <br>
+                        <p style="color: #000;">15,000원</p>
+                    </div>
+                </li>
+                <li class="box-7">
+                    <img src="images/image_1634307677674_1000.jpg" alt="" />
+                    <div class="txt">
+                        <h2>♥자이언트 나비♥</h2>
+                        <br>
+                        <p style="color: #000;">[세련된 도시여자느낌을 연출]</p>
+                        <br>
+                        <p style="color: #000;">15,000원</p>
+                    </div>
+                </li>
+                <li class="box-8">
+                    <img src="images/image_1638883082313_1000.jpg" alt="" />
+                    <div class="txt">
+                        <h2>♥블랙진주알 나비♥</h2>
+                        <br>
+                        <p style="color: #000;">[큐티,섹시 느낌을 한번에 연출]</p>
+                        <br>
+                        <p style="color: #000;">15,000원</p>
+                    </div>
+                </li>
+                <li class="box-9">
+                    <img src="images/image_1638875223186_1000.jpg" alt="" />
+                    <div class="txt">
+                        <h2>♥체크보드 하트♥</h2>
+                        <br>
+                        <p style="color: #000;">[귀여운 유니크함을 연출]</p>
+                        <br>
+                        <p style="color: #000;">15,000원</p>
+                    </div>
+                </li>
+                <li class="box-10">
+                    <img src="images/image_1667287104382_1000.png" alt="" />
+                    <div class="txt">
+                        <h2>♥골드 RED 하트♥</h2>
+                        <br>
+                        <p style="color: #000;">[세련미와 힙한느낌을 한번에 연출]</p>
+                        <br>
+                        <p style="color: #000;">35,000원</p>
+                    </div>
+                </li>
+                <li class="box-11">
+                    <img src="images/image_1624581111791_1000.jpg" alt="" />
+                    <div class="txt">
+                        <h2>♥로멘틱 로즈♥</h2>
+                        <br>
+                        <p style="color: #000;">[세상 여리여리, 여자여자하게]</p>
+                        <br>
+                        <p style="color: #000;">17,000원</p>
+                    </div>
+                </li>
+                <li class="box-12">
+                    <img src="images/image_1583485642744_1000.png" alt="" />
+                    <div class="txt">
+                        <h2>♥스몰 튤립♥</h2>
+                        <br>
+                        <p style="color: #000;">[데일리로 꾸안꾸느낌 연출 가능]</p>
+                        <br>
+                        <p style="color: #000;">18,000원</p>
+                    </div>
+                </li>
+                <li class="box-13">
+                    <img src="images/image_1640509781163_1000.jpeg" alt="" />
+                    <div class="txt">
+                        <h2>♥웨이브 리본♥</h2>
+                        <br>
+                        <p style="color: #000;">[착용하는 순간! 예.쁨.미]</p>
+                        <br>
+                        <p style="color: #000;">18,000원</p>
+                    </div>
+                </li>
+                <li class="box-14">
+                    <img src="images/image_1682429382297_1000.png" alt="" />
+                    <div class="txt">
+                        <h2>♥블루 자스민공주♥</h2>
+                        <br>
+                        <p style="color: #000;">[공쥬들은 다 모여라!]</p>
+                        <br>
+                        <p style="color: #000;">30,000원</p>
+                    </div>
+                </li>
+                <li class="box-15">
+                    <img src="images/image_1676117309450_1000.png" alt="" />
+                    <div class="txt">
+                        <h2>♥럭셔리 바이올렛♥</h2>
+                        <br>
+                        <p style="color: #000;">[공주 되고 싶으면 "GET"]</p>
+                        <br>
+                        <p style="color: #000;">15,000원</p>
+                    </div>
+                </li>
+                <li class="box-16">
+                    <img src="images/image_1660221942756_1000.png" alt="" />
+                    <div class="txt">
+                        <h2>♥windy 하트♥</h2>
+                        <br>
+                        <p style="color: #000;">[핫한 착장에도 이쁨 강조!]</p>
+                        <br>
+                        <p style="color: #000;">23,000원</p>
+                    </div>
+                </li>
+                <li class="box-17">
+                    <img src="images/image_1672582052881_1000.jpg" alt="" />
+                    <div class="txt">
+                        <h2>♥Look at Me♥</h2>
+                        <br>
+                        <p style="color: #000;">[자유 분방하면서도 볼륨감있는 연출]</p>
+                        <br>
+                        <p style="color: #000;">25,000원</p>
+                    </div>
+                </li>
+                <li class="box-18">
+                    <img src="images/image_1683972686719_1000.jpg" alt="" />
+                    <div class="txt">
+                        <h2>♥빈티지 앤틱크♥</h2>
+                        <br>
+                        <p style="color: #000;">[여성스러움, 귀여움 한도 초과]</p>
+                        <br>
+                        <p style="color: #000;">22,000원</p>
+                    </div>
+                </li>
+                <li class="box-19">
+                    <img src="images/image_1675413510031_1000.png" alt="" />
+                    <div class="txt">
+                        <h2>♥로즈 캔디맛♥</h2>
+                        <br>
+                        <p style="color: #000;">[빨간맛 궁금해 허니]</p>
+                        <br>
+                        <p style="color: #000;">18,000원</p>
+                    </div>
+                </li>
+                <li class="box-20">
+                    <img src="images/image_1653623967434_1000.jpeg" alt="" />
+                    <div class="txt">
+                        <h2>♥체리 진주♥</h2>
+                        <br>
+                        <p style="color: #000;">[고급스럽고 분위기 있는 연출]</p>
+                        <br>
+                        <p style="color: #000;">15,000원</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                cssMode: true,
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+                mousewheel: true,
+                keyboard: true,
+                slidesPerView: 3,
+            });
+        </script>
+
+        <footer class="ft">
+            <div class="ftcontent1">
+                <p>상호: 민재만재 | 대표: 백민재 | 개인정보관리책임자: 백민재 | 전화: 07088436281 | 이메일: dodo88obob@naver.com</p>
+                <p>주소: 대구 달서구 송현로 12안길 14 | 사업자등록번호: 736-32-00060 | 통신판매: 제 2017-대구달서-0205호 | 호스팅제공자: (주)식스샵</p>
+            </div>
+            <div class="footerc">
+                <div class="ftcontent2">
+                    <div class="text">
+                        <a target="_blank" href="https://pg.nicepay.co.kr/issue/IssueEscrow.jsp?Mid=dodo88ob1m&amp;CoNo=736-32-00060">
+                            <img class="nicepay" src="https://static.sixshop.com/resources/images/product/escrow_nicepay.png" /><span>안전구매(에스크로) 서비스 가맹점</span></a
+                        >
+                        <a href="https://www.manze.co.kr/policy">이용약관</a>
+                        <a href="https://www.manze.co.kr/privacy">개인정보처리방침</a>
+                        <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=7363200060">사업자정보확인</a>
+                    </div>
+                    <div class="sns-icon">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                                />
+                            </svg>
+                            <a class="instagram" href="http://www.instagram.com/manze.co.kr" data-originallink="http://www.instagram.com/manze.co.kr" target="_blank"></a>
+                        </div>
+
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M123.6 391.3c12.9-9.4 29.6-11.8 44.6-6.4c26.5 9.6 56.2 15.1 87.8 15.1c124.7 0 208-80.5 208-160s-83.3-160-208-160S48 160.5 48 240c0 32 12.4 62.8 35.7 89.2c8.6 9.7 12.8 22.5 11.8 35.5c-1.4 18.1-5.7 34.7-11.3 49.4c17-7.9 31.1-16.7 39.4-22.7zM21.2 431.9c1.8-2.7 3.5-5.4 5.1-8.1c10-16.6 19.5-38.4 21.4-62.9C17.7 326.8 0 285.1 0 240C0 125.1 114.6 32 256 32s256 93.1 256 208s-114.6 208-256 208c-37.1 0-72.3-6.4-104.1-17.9c-11.9 8.7-31.3 20.6-54.3 30.6c-15.1 6.6-32.3 12.6-50.1 16.1c-.8 .2-1.6 .3-2.4 .5c-4.4 .8-8.7 1.5-13.2 1.9c-.2 0-.5 .1-.7 .1c-5.1 .5-10.2 .8-15.3 .8c-6.5 0-12.3-3.9-14.8-9.9c-2.5-6-1.1-12.8 3.4-17.4c4.1-4.2 7.8-8.7 11.3-13.5c1.7-2.3 3.3-4.6 4.8-6.9c.1-.2 .2-.3 .3-.5z"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="ft-right">
+                        <div style="display: flex">
+                            <a class="name" style="position: relative; top: -15px" stalt="CONTACT" href="https://www.manze.co.kr/contact">CONTACT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

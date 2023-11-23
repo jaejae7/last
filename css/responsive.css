@@ -1,0 +1,402 @@
+@media screen and (max-width: 1440px) {
+    .mainimg {
+        top: 58%;
+        left: 45%;
+    }
+
+    .main-container .tabmenu {
+        margin-left: 7%;
+    }
+
+    .tabmenu ul {
+        margin-left: -3%;
+    }
+
+    .fg .fginner {
+        margin-left: 13%;
+    }
+
+    .fg .fg-txt {
+
+
+        width: 50%;
+    }
+
+    .etc-w .work {
+        width: 50%;
+    }
+
+    .etc-w .work .tt ul {
+        margin-right: -90%;
+        margin-left: -8%;
+    }
+
+    .contact .flash {
+        margin-left: 10%;
+    }
+
+    .function {
+        margin: 0;
+    }
+
+    .function h1 {
+        width: 50%;
+    }
+
+
+}
+
+@media screen and (max-width: 1024px) {
+    .image-container .birdr {
+        right: -46%;
+        width: 300px;
+        height: 250px;
+    }
+
+    .image-container .birdl {
+        top: -41px;
+        width: 300px;
+        height: 300px;
+        left: -10px;
+    }
+
+    .image-container .bats {
+        width: 100px;
+        height: 200px;
+        top: -55px;
+        left: 55%;
+    }
+
+    .image-container .birdc {
+        width: 200px;
+        height: 300px;
+        top: -70px;
+        right: 14%;
+    }
+
+    .mainimg {
+        left: 65%;
+    }
+
+    .mainimg .snowwhite {
+        margin-left: 0px;
+        width: 400px;
+        height: 450px;
+    }
+
+    .mainimg .maintxt {
+        margin-left: -20%;
+    }
+
+    .mainimg .maintxt .user {
+        font-size: 2rem;
+    }
+
+    .main-container .container img {
+        right: -44%;
+    }
+
+    .main-container .tabmenu {
+        width: 700px;
+        left: 15%;
+    }
+
+    .tabmenu .txt {
+        margin-right: -35px;
+    }
+
+    .tabmenu .ist {
+        margin-right: -13%;
+    }
+
+    .tabmenu .xt {
+        margin-right: -11%;
+    }
+
+    .etc-w {
+        margin-top: 90%;
+    }
+
+    .etc-w .work .tt ul {
+        margin-left: 30%;
+        margin-right: -180%;
+    }
+
+    .jpg-content img {
+        width: 150px;
+    }
+
+    .etc-w .work .tt img {
+        transition: all .5s;
+        display: none;
+        width: 150px;
+        object-fit: cover;
+    }
+
+    .etc-w .work .tt img.active {
+        display: block;
+        animation: ttimg 1s linear;
+    }
+
+    .fg .fg-txt {
+        width: 50%;
+    }
+
+    .etc-w .work {
+        width: 50%;
+    }
+
+    .function {
+        margin-left: 5%;
+    }
+
+    .function h1 {
+        width: 50%;
+    }
+
+    @keyframes ttimg {
+        0% {
+            transform: scale(.2);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .fg .fginner ul {
+        gap: 20%;
+        margin-left: 18%;
+    }
+
+    .fg .fginner ul li .snow {
+        width: 200px;
+        height: 100px;
+        object-fit: contain;
+        transition: all .5s;
+    }
+
+    .fg .fginner ul li .hot {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        transition: all .5s;
+    }
+
+    .fg .fginner ul li .nb {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        transition: all .5s;
+    }
+
+    .fg .fginner ul li svg {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        transition: all .5s;
+        /* :hover 하기전에 transition 적용 */
+    }
+
+    .fg .fginner ul li svg:hover {
+        transform: scale(2);
+        /* 이미지 컨테이너를 1.2배로 확대 */
+        cursor: pointer;
+        /* 마우스 커서를 포인터로 변경 (선택 사항) */
+    }
+
+    .fg .fginner ul li img:hover {
+        transform: scale(1.5);
+        /* 이미지 컨테이너를 1.2배로 확대 */
+        cursor: pointer;
+        /* 마우스 커서를 포인터로 변경 (선택 사항) */
+    }
+
+    .function {
+        margin-left: 10%;
+    }
+
+
+    .function .seven {
+        margin-left: 7%;
+    }
+
+    .function .seven img {
+        width: 100px;
+        height: 150px;
+    }
+
+    .function .seven h3 {
+        margin-right: -22px;
+        font-size: 1rem;
+        margin-left: 32px;
+    }
+
+    .contact .flash {
+        margin-left: 17%;
+        margin-top: -5%;
+    }
+
+    .contact .contact-me .bg {
+        margin-top: 8%;
+        margin-left: 7%;
+    }
+
+
+    .contact .contact-me .right {
+        width: 30%;
+        margin-right: 12%;
+        margin-top: -67%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrap .image-container .birdr {
+        right: -81%;
+
+    }
+
+    .wrap .image-container .bats {
+        left: 73%;
+    }
+
+    .wrap .image-container .birdc {
+        right: -15%;
+    }
+
+    .mainimg {
+        top: 50%;
+        left: 84%;
+    }
+
+    .main-container {
+        margin-left: 30%;
+    }
+
+    .main-container .tabmenu {
+        width: 700px;
+        left: -6%;
+    }
+
+    .main-container .container img {
+        right: -77%;
+    }
+
+    .etc-w {
+        margin-top: 116%;
+    }
+
+    .etc-w .work .tt ul {
+        margin-right: -245%;
+    }
+
+    .contact .flash {
+        right: 40%;
+    }
+
+    .fg {
+        margin-top: 40%;
+    }
+
+
+    .function .seven {
+        margin-left: -3%;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .contact .flash {
+        right: 9%;
+    }
+
+    .wrap .image-container .birdr {
+        float: right;
+        left: 255%;
+    }
+
+    .wrap .image-container .bats {
+        left: 130%;
+    }
+
+    .wrap .image-container .birdc {
+        float: right;
+        left: 157%;
+    }
+
+    .mainimg {
+        margin-left: 70%;
+    }
+
+    .main-container .container img {
+        float: right;
+        left: 208%;
+    }
+
+    .main-container .tabmenu {
+        margin-left: 33%;
+    }
+
+    .etc-w {
+        margin-top: 200%;
+    }
+
+    .fg {
+        margin-top: 70%;
+    }
+
+    .function .seven {
+        margin-left: 10%;
+    }
+
+    .function .seven ul {
+        margin-right: -242%;
+    }
+    .etc-w .work .tt ul {
+        margin-right: -537%;
+        margin-left: 31%;
+    }
+
+}
+
+
+@media screen and (max-width: 375px) {
+    .wrap .image-container .birdl {
+        left: -7%;
+    }
+
+    .wrap .image-container .bats {
+        left: 124%;
+    }
+
+    .etc-w .work .tt ul {
+        margin-right: -555%;
+        margin-left: 100%;
+    }
+
+    .fg .fginner ul {
+        margin-left: 50%;
+    }
+
+    .contact .right {
+        margin-left: -20%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact .flash {
+        right: -5%;
+    }
+
+    .etc-w {
+        margin-left: 15%;
+    }
+
+    .fg-txt {
+        margin-left: 15%;
+    }
+
+    .function h1 {
+        margin-left: 2%;
+    }
+}
